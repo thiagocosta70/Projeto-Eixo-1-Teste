@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  text-decoration: none;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--vermelho-claro) !important;
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+main {
+  margin: 6rem 0 3rem;
+}
+
+:root {
+  --max-branco: #fff;
+  --branco: #f2f2f2;
+  --cinza: #e4e4e4;
+  --vermelho-claro: #f7dcdc;
+  --vermelho-medio: #d74f4f;
+  --vermelho-escuro: #b13a3a;
+  --vermelho-escuro-2: #750000;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--branco);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--vermelho-escuro);
+  border: 0.2rem solid var(--branco);
+}
+
+input {
+  caret-color: var(--vermelho-medio);
+}
+
+::selection {
+  background-color: var(--vermelho-medio);
+}
+
+.navbar-nav > .nav-item a,
+footer > .container > .nav > .nav-item > .nav-link,
+.link-login {
+  transition: ease-in-out 0.2s;
+}
+
+.navbar-nav > .nav-item a:hover,
+footer > .container > .nav > .nav-item > .nav-link:hover,
+.link-login:hover {
+  color: var(--vermelho-escuro);
+}
+
+.navbar-nav > .nav-item a {
+  font-weight: 500;
+}
+
+footer > .container > .nav > .nav-item > .nav-link {
+  color: var(--vermelho-medio);
+}
+
+#repeatPasswordError {
+  color: var(--vermelho-medio);
+  margin: 0.4rem;
+}
+
+.form-control:focus {
+  /* border-color: var(--vermelho-claro) !important; */
+  box-shadow: 0 0 0 0.2rem rgba(215, 79, 79, 0.25) !important;
+}
+
+.section__form {
+  background-color: var(--max-branco);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.2);
+}
+
+.cadastro {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.link-login {
+  font-weight: 600;
+  color: var(--vermelho-medio);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body,
+  main {
+    height: 100%;
+  }
+}
