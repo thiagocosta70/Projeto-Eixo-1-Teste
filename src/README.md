@@ -112,3 +112,43 @@ O site em HTML/CSS/JS é um projeto estático. É necessário implantá-lo em um
 #### Alterado
 
 - Alteração para a página de cardápio renderizar via JSON
+
+### [0.1.14] - 23/05/2024
+
+#### Adicionado
+
+- Página de login e todas as suas funcionalidades
+
+#### Alterado
+
+- Objeto inicial do usuário para conter os cartões de crédito e armazenamento do e-mail do usuário separadamente para utilização, na lógica de cadastro
+
+### [0.1.15] - 23/05/2024
+
+#### Adicionado
+
+- Campo de pesquisa funcional na página de cardápio
+
+### [0.1.16] - 24/05/2024
+
+#### Adicionado
+
+- Foi adicionado a verificação de login na tela de Login.
+
+### [0.1.17] - 28/05/2024
+
+#### Alterado
+
+- Corrigida responsividade da página de perfil.
+- Reorganização do histórico de versões.
+
+### [0.1.18] - 29/05/2024
+
+#### Adicionado
+
+- Implementação das funcionalidades na página de cardápio
+- Implementação das funcionalidades do carrinho na página de cardápio
+
+#### Excluído
+
+- Arquivo carrinho.html
