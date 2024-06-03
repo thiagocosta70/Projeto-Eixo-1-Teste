@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: calc(100% - 50px);
+
+  }
+  
+  :root {
+    --max-branco: #fff;
+    --branco: #f2f2f2;
+    --cinza: #e4e4e4;
+    --vermelho-claro: #f7dcdc;
+    --vermelho-medio: #d74f4f;
+    --vermelho-escuro: #b13a3a;
+    --vermelho-escuro-2: #750000;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--branco);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--vermelho-escuro);
+    border: 0.2rem solid var(--branco);
+  }
+  
+  .section__height {
+    height: calc(100vh - 250px);
+  }
+  
+  .navbar-nav > .nav-item a {
+    font-weight: 500;
+    transition: ease-in-out 0.2s;
+  }
+  
+  .navbar-nav > .nav-item a:hover {
+    color: var(--vermelho-medio);
+  }
+  
+  footer > .container > .nav > .nav-item > .nav-link {
+    color: var(--vermelho-medio);
+    transition: ease-in-out 0.2s;
+  }
+  
+  footer > .container > .nav > .nav-item > .nav-link:hover {
+    color: var(--vermelho-escuro);
+  }
+
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-description {
+    color: #555;
+    margin: 16px 0 0 0;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #b13a3a;
+    color: white;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Estilo básico dos cards */
+.card {
+    background-color:var(--vermelho-medio);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width:300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Imagem dentro do card */
+.card img {
+    width:100%;
+    height:100%;   
+    object-fit: cover;
+    border: 1px solid rgb(230, 224, 224);
+    cursor: pointer;
+    background-color: #FFF;
+}
+
+
+.card-content {
+    align-items: center;
+    padding: 16px;
+}
+
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: var(--max-branco);
+}
+
+
+.card-description {
+    color:var(--branco);
+    margin: 16px 0 0 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; 
+    padding: 0 20px; 
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}
+
+.banner {
+    background-color: #b13a3a;
+    padding:2%;
+    text-align:center;
+    
+  }
+  .texto {
+    color: var(--max-branco);
+    align-items: center;
+  }
+  .text-rodape {
+    color:black;
+  }
+  
+  .banner-section {
+    background-color: rgba(215, 79, 79, 0.1);
+    height: 200px;
+  }
+  
+  .banner-text {
+    background-color: #B13A3A;
+    border-radius: 10px;
+    max-width: 605px;
+    height: 120px;
+  }
+  
+  .banner-text > p {
+    color: #F8F8F8;
+    font-family: Arvo;
+    font-weight: 700;
+    font-size: 26px;
+  }
+    
+  
+  /* Barra de Pesquisa */
+
+  .search-section {
+  width: 350px;
+  height: 43px;
+  }
+
+#search-input[type=text] {
+  text-align: center;
+  
+}
+
+#search-input::placeholder {
+  color: #A6A6A6;
+  font-size: 16px;
+  text-align: center;
+  }
+
+.lupa {
+  background-color: #B13A3A;
+  width: none;
+  border: none;
+  align-items: flex-start;
+  color: #FFF;
+}
+
+.cardapio-section {
+  background-color: rgba(215, 79, 79, 0.2);
+}
+
+.filtros-cardapio > li > .active{
+  background-color: #B13A3A!important;
+}
+
+.filtros-cardapio > li > button:hover {
+  color: var(--vermelho-medio);
+}
+
+.filtros-cardapio > li > button {
+  color: #47525E;
+  font-family: Lato;
+  font-size: 22px;
+}
+
+.filtros-cardapio > li > .active:hover {
+  color: #FFF;
+}
+
+.search-section {
+  width: 300px;
+  height: 43px;
+}
+
+#search-input[type=text] {
+  text-align: center;
+}
+
+#search-input::placeholder {
+  color: #A6A6A6;
+  font-size: 16px;
+  text-align: center;
+}
+
+.lupa {
+  background-color: #B13A3A;
+  width: 40px;
+  border: none;
+  align-items: flex-start;
+  color: #FFF;
+}
+
+
+.img-wrapper {
+  max-width: 100%;
+  height: 17vw;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (min-width:576px) {
+  .carousel-inner {
+      display: flex;
+  }
+  
+  .carousel-item {
+      display: block;
+      margin-right: 0;
+      flex: 0 0 calc(100%/4);
+  }
+
+  .img-wrapper {
+      max-width: 100%;
+      height: 23vw;
+  }
+
+  .carousel-control-prev {
+      left: -5%;
+  }
+  
+  .carousel-control-next {
+      right: -5%;
+  }
+
+  .carousel .carousel-control-prev, 
+  .carousel .carousel-control-next {
+      background-color: transparent;
+  }
+
+  .card img {
+      height: 15vw;
+      object-fit: cover;
+  }
+}
+
+.carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D55' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D55' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.card {
+  font-family: Lato;
+  margin: 0 .5em;
+  border-radius: 0;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, .18);
+  color: #CD5C5C;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 6vh;
+  height: 6vh;
+  background-color: rgba(215, 79, 79, 0.295);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .5;
+}
+
+.card-title {
+  
+  font-size: 22px;
+  font-weight: 850;
+}
+
+.quantity {
+  color: #dc9b9b!important;
+}
+
+.dotted_line {
+  border-bottom: 1px dotted #B13A3A;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 850;
+}
+
+.fa-circle-minus, .fa-circle-plus {
+  cursor: pointer;
+}
+
+
+
+
+
+
+.status_pedido, .tempo_espera, .preco_total {
+  font-weight: 850;
+}
+
+.fa-star {
+  font-size: 20px;
+}
