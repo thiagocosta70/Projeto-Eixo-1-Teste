@@ -58,7 +58,7 @@ RF-02: A aplicação deve permitir que o usuário faça o login na sua conta.
 O acesso à tela de restaurantes poderá ser feito através da opção de menu "Restaurantes". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de restaurantes:
-![Tela de restaurantes](img/funcionalidades-restaurantes.png)
+![Tela de restaurantes](img/restaurantes.png)
 
 #### Requisito atendido
 RF-03: A aplicação deve permitir que o usuário visualize os restaurantes cadastrados.
@@ -212,6 +212,131 @@ RF-09: A aplicação deve permitir que o usuário avalie o pedido e o restaurant
 #### Responsável
 
 - Gabriel Roeder e Thiago Emanuel da Costa
+
+### Cupons promocionais (RF-10)
+
+Para utilizar o cupom de desconto, é necessário adicionar um item no carrinho, ir ao carrinho clicando em seu respectivo ícone no menu, inserir o codigo no campo apropriado e clicar em aplicar. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+
+Exemplo da tela de cupons:
+![Cupons promocionais](img/funcionalidades-cupomdesconto.png)
+
+#### Requisito atendido
+
+RF-10: A aplicação deve permitir o uso de cupons promocionais.
+
+#### Artefatos da funcionalidade
+
+- [cardapio.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cardapio.html)
+- [carrinho.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/carrinho.js)
+- [carrinhoStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/carrinhoStyle.css)
+
+#### Instruções de acesso
+
+1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html
+2. Clique em Restaurantes no menu
+3. Clique em um dos restaurantes para visualizar seu cardápio
+4. Adicione os itens desejados ao carrinho
+5. Clique no ícone de carrinho
+6. Encontre o campo para inserir o cupom de desconto
+7. Digite o código do cupom
+8. Verifique se o desconto foi aplicado ao total da compra
+
+#### Responsável
+
+- Laura Furtado Amaral
+
+### Calculo de estoque (RF-11)
+
+Ao realizar um pedido, o estoque registrado de produtos é automaticamente reduzido, garantindo uma gestão precisa e atualizada dos itens disponíveis. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+
+Exemplo da tela de estoque:
+![Calculo de estoque](img/funcionalidades-estoque.png)
+
+#### Requisito atendido
+
+RF-11: A aplicação deve conseguir calcular a capacidade de entrega de pratos de cada restaurante (estoque).
+
+#### Artefatos da funcionalidade
+
+- [cardapio.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cardapio.html)
+- [carrinho.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/carrinho.js)
+- [carrinhoStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/carrinhoStyle.css)
+
+#### Instruções de acesso
+
+1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html
+2. Clique em Restaurantes no menu
+3. Clique em um dos restaurantes para visualizar seu cardápio
+4. Adicione os itens desejados ao carrinho
+5. O sistema irá verificar se existe estoque disponivel
+6. Finalize a compra
+7. O estoque é reduzido de acordo com a quantidade vendida
+
+
+#### Responsável
+
+- Gabriel Roeder
+
+### Cadastro de pratos do cardápio e faturamento (RF-12 e RF-13)
+
+Ao fazer o acesso como administrador, os proprietários poderão adicionar e remover pratos do cardápio, visualizar as receitas de vendas, além de atualizar os estoques de forma eficiente. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+
+Exemplo da tela de faturamento:
+![Faturamento](img/funcionalidades-faturamento.png)
+
+Exemplo da tela de cadastro de pratos:
+![Cadastro de pratos](img/funcionalidades-cadastroprato.png)
+
+#### Requisito atendido
+
+RF-12: A aplicação deve permitir donos de restaurantes cadastrarem e removerem pratos do cardápio.
+RF-13: A aplicação deve permitir que os donos acessem suas receitas de venda.
+
+#### Artefatos da funcionalidade
+
+- [admin.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/admin.html)
+- [adminScript.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/adminScript.js)
+- [adminStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/adminStyle.css)
+
+#### Instruções de acesso
+
+1. Abra um navegador de Internet e informe a seguinte URL: http://127.0.0.1:5500/src/pages/admin.html?id=1
+2. Em "Detalhes" o proprietario tem acesso ao seu faturamento
+3. Em "Adicionar itens" o proprietario tem acesso para cadastro de um novo prato do cardápio.
+
+
+#### Responsável
+
+- Gabriel Roeder
+
+### Comunicação entre cliente e restaurante (RF-14)
+
+Para iniciar o contato com o restaurante basta clicar no icone do chat localizado no canto inferior esquerdo das páginas. As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
+
+Exemplo da tela de chat:
+![Chat](img/funcionalidades-chat.png)
+
+#### Requisito atendido
+
+RF-14: A aplicação deve permitir que o cliente e restaurante se comuniquem via chat.
+
+#### Artefatos da funcionalidade
+
+- [cardapio.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cardapio.html)
+- [chat.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/chat.js)
+- [chatStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/chatStyle.css)
+
+#### Instruções de acesso
+
+1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html
+2. Faça o login
+3. Clique em "Restaurante" ou "Pedidos" no menu
+4. Clique no icone no canto inferior da pagina para iniciar o chat
+5. Envie sua mensagem para o restaurante
+
+#### Responsável
+
+- Ytallo Bruno Canuto Guedes
 
 ### Tela inicial
 
