@@ -58,7 +58,7 @@ RF-02: A aplicação deve permitir que o usuário faça o login na sua conta.
 O acesso à tela de restaurantes poderá ser feito através da opção de menu "Restaurantes". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da tela de restaurantes:
-![Tela de restaurantes](img/restaurantes.png)
+![Tela de restaurantes](img/funcionalidades-restaurante.png)
 
 #### Requisito atendido
 RF-03: A aplicação deve permitir que o usuário visualize os restaurantes cadastrados.
@@ -66,7 +66,7 @@ RF-03: A aplicação deve permitir que o usuário visualize os restaurantes cada
 #### Artefatos da funcionalidade
 
 - [restaurantes.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/restaurantes.html)
-- [cardapioCarouselScript.js](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/assets/js/cardapioCarouselScript.js)
+- [restaurantes.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/restaurantes.js)
 - [restauranteStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/restauranteStyle.css)
 
 #### Instruções de acesso
@@ -91,7 +91,9 @@ RF-04: A aplicação deve permitir que o usuário visualize o cardápio completo
 #### Artefatos da funcionalidade
 
 - [cardapio.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cardapio.html)
-- [cardapioCarouselScript.js](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/assets/js/cardapioCarouselScript.js)
+- [cardapioCarouselScript.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/cardapioCarouselScript.js)
+- [renderCategoriesCardapioUtils.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/renderCategoriesCardapioUtils.js)
+- [renderPratosCardapioUtils.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/renderPratosCardapioUtils.js)
 - [cardapioStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/cardapioStyle.css)
 
 #### Instruções de acesso
@@ -109,7 +111,7 @@ RF-04: A aplicação deve permitir que o usuário visualize o cardápio completo
 Para pagar e realizar pedidos online, é necessário adicionar um item no carrinho, ir ao carrinho clicando em seu respectivo ícone no menu, selecionar um meio de pagamento e clicar em "Finalizar pedido". As estruturas de dados foram baseadas em HTML, CSS e JavaScript.
 
 Exemplo da finalização de um pedido:
-![Finalização de um pedido](img/funcionalidades-compra.png)
+![Finalização de um pedido](img/funcionalidades-carrinhocompra.png)
 
 #### Requisito atendido
 RF-05: A aplicação deve permitir que o usuário realize a compra de itens no restaurante remotamente.
@@ -117,7 +119,7 @@ RF-06: A aplicação deve permitir que o usuário realize o pagamento online do 
 
 #### Artefatos da funcionalidade
 
-- [carrinho.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/carrinho.html)
+- [cardapio.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cardapio.html)
 - [carrinho.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/carrinho.js)
 - [carrinhoStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/carrinhoStyle.css)
 
@@ -149,6 +151,7 @@ RF-07: A aplicação deve permitir que o usuário visualize o status do seu pedi
 
 - [pedidos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/pedidos.html)
 - [pedidos.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/pedidos.js)
+- [pedidosCarrousel.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/pedidosCarrousel.js)
 - [pedidosstyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/pedidosstyle.css)
 
 #### Instruções de acesso
@@ -174,6 +177,8 @@ RF-08: A aplicação deve permitir que o usuário filtre pratos pelo tipo de ref
 
 - [cardapio.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/cardapio.html)
 - [cardapioCarouselScript.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/cardapioCarouselScript.js)
+- [renderCategoriesCardapioUtils.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/renderCategoriesCardapioUtils.js)
+- [renderPratosCardapioUtils.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/renderPratosCardapioUtils.js)
 - [cardapioStyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/cardapioStyle.css)
 
 #### Instruções de acesso
@@ -201,6 +206,7 @@ RF-09: A aplicação deve permitir que o usuário avalie o pedido e o restaurant
 
 - [pedidos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/pages/pedidos.html)
 - [pedidos.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/pedidos.js)
+- [pedidosCarrousel.js](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/js/pedidosCarrousel.js)
 - [pedidosstyle.css](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/blob/main/src/assets/css/pedidosstyle.css)
 
 #### Instruções de acesso
@@ -300,9 +306,10 @@ RF-13: A aplicação deve permitir que os donos acessem suas receitas de venda.
 
 #### Instruções de acesso
 
-1. Abra um navegador de Internet e informe a seguinte URL: http://127.0.0.1:5500/src/pages/admin.html?id=1
-2. Em "Detalhes" o proprietario tem acesso ao seu faturamento
-3. Em "Adicionar itens" o proprietario tem acesso para cadastro de um novo prato do cardápio.
+1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t4-pmv-ads-2024-1-e1-proj-fila-facil/src/index.html
+2. Faça o acesso como administrador
+3. Em "Detalhes" o proprietario tem acesso ao seu faturamento
+4. Em "Adicionar itens" o proprietario tem acesso para cadastro de um novo prato do cardápio.
 
 
 #### Responsável

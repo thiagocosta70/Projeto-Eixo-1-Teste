@@ -62,11 +62,11 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
   color: var(--vermelho-escuro);
 }
 
-.file-upload .square {
-  height: 250px;
-  width: 250px;
-  min-height: 150px;
-  min-width: 150px;
+.square {
+  max-width: 250px;
+  max-height: 250px;
+  overflow: hidden;
+  position: relative;
   margin: auto;
   vertical-align: middle;
   border: 1px solid #e5dfe4;
@@ -74,31 +74,21 @@ footer > .container > .nav > .nav-item > .nav-link:hover {
   border-radius: 5px;
 }
 
-.file-upload .square img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+.square img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.btn-success-soft {
-  color: #28a745;
-  background-color: rgba(40, 167, 69, 0.1);
+.icones-crud {
+  cursor: pointer;
 }
 
-.btn-danger-soft {
-  color: #dc3545;
-  background-color: rgba(220, 53, 69, 0.1);
+.btn-add-div {
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
 
-.profile-photo {
-  width: 100%;
-  min-width: 80%;
-}
-
-.form-label ~ input:focus {
-  outline: none !important;
-  box-shadow: none !important;
+.item-precoPrato {
+  min-width: 100px;
 }
